@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little Universe 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+ <style>
+    .universe-layout {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+        gap: 40px !important;
+        max-width: 1000px !important;
+        margin: 40px auto !important;
+    }
+
+    .universe-photos {
+        width: 230px !important;
+        display: grid !important;
+        grid-template-columns: 100px 100px !important;
+        gap: 15px !important;
+    }
+
+    .universe-photo {
+        width: 100px !important;
+        height: 125px !important;
+        padding: 5px !important;
+        margin: 0 !important;
+        background: white !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .universe-photo img {
+        width: 90px !important;
+        height: 90px !important;
+        max-width: 90px !important;
+        max-height: 90px !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .universe-photo span {
+        display: block !important;
+        font-size: 8px !important;
+        text-align: center !important;
+        margin-top: 4px !important;
+    }
+</style>
+</head>
+
+<body>
+    <audio id="backgroundMusic" loop autoplay>
+    <source src="music/Our Song.mp3" type="audio/mpeg">
+</audio>
+<script>
+const music = document.getElementById("backgroundMusic");
+
+const savedTime = sessionStorage.getItem("loveSongTime");
+
+if (savedTime) {
+    music.currentTime = parseFloat(savedTime);
+}
+
+music.addEventListener("timeupdate", function () {
+    sessionStorage.setItem("loveSongTime", music.currentTime);
+});
+
+window.addEventListener("beforeunload", function () {
+    sessionStorage.setItem("loveSongTime", music.currentTime);
+});
+
+music.play().catch(() => {});
+</script>
+
+    <!-- Page Heading -->
+
+    <section class="universe-header">
+
+        <p>💗 Welcome to</p>
+
+        <h1>Our Little Universe</h1>
+
+        <span>Every little moment became a part of our story. 🫶</span>
+
+    </section>
+
+
+    <!-- Our Story Timeline -->
+
+    <section class="timeline-section">
+
+        <p class="section-small">🗓️ Our Journey</p>
+
+        <h2>Our Story 💕</h2>
+        <div class="universe-layout">
+
+    <!-- Timeline -->
+    <div class="timeline-wrapper">
+
+        <div class="timeline">
+
+            <!-- 21 September 2024 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">💬</div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        21 September 2024 💗
+                    </span>
+
+                    <h3>Our First Conversation</h3>
+
+                    <p>
+                        This was the beginning of something I never knew
+                        would become so special. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3 October 2024 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">🌷</div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        3 October 2024 🫶
+                    </span>
+
+                    <h3>The Day We Met</h3>
+
+                    <p>
+                        3rd October...
+                        the day I finally met you. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 29 December 2024 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">❤️</div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        29 December 2024 ❤️
+                    </span>
+
+                    <h3>Our Beginning</h3>
+
+                    <p>
+                        And then came the day our relationship officially
+                        started. 🥺❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 9 March 2025 -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">✨</div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        9 March 2025 💞
+                    </span>
+
+                    <h3>A Special Date</h3>
+
+                    <p>
+                        Some dates don't need an explanation.
+                        They just hold a special place in your heart. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Today -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot">💗</div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-date">
+                        Today 🫶
+                    </span>
+
+                    <h3>Still Us</h3>
+
+                    <p>
+                        Still making memories, still annoying each other,
+                        still laughing and still choosing each other. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SIDE PHOTOS -->
+
+    <div class="universe-photos">
+
+        <div class="universe-photo photo-one">
+            <img src="photos/Universe%201.jpeg" alt="Our Memory">
+            <span>Our little moments 💗</span>
+        </div>
+
+        <div class="universe-photo photo-two">
+            <img src="photos/Universe%202.jpeg" alt="Our Memory">
+            <span>Just us 🫶</span>
+        </div>
+
+        <div class="universe-photo photo-three">
+            <img src="photos/Universe%203.jpeg" alt="Our Memory">
+            <span>My favourite people ❤️</span>
+        </div>
+
+        <div class="universe-photo photo-four">
+            <img src="photos/Universe%204.jpeg" alt="Our Memory">
+            <span>Making memories ✨</span>
+        </div>
+
+    </div>
+
+</div>
+
+       <div class="timeline">
+
+    <!-- 21 September 2024 -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">💬</div>
+
+        <div class="timeline-card">
+
+            <span class="timeline-date">
+                21 September 2024 💗
+            </span>
+
+            <h3>Our First Conversation</h3>
+
+            <p>
+                This was the beginning of something I never knew
+                would become so special. ❤️
+                Our first conversation... and then slowly,
+                you became a very important part of my life. 🥺
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3 October 2024 -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">🌷</div>
+
+        <div class="timeline-card">
+
+            <span class="timeline-date">
+                3 October 2024 🫶
+            </span>
+
+            <h3>The Day We Met</h3>
+
+            <p>
+                3rd October...
+                the day I finally met you. ❤️
+                A date that became one of the sweetest
+                memories of our story.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 29 December 2024 -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">❤️</div>
+
+        <div class="timeline-card">
+
+            <span class="timeline-date">
+                29 December 2024 ❤️
+            </span>
+
+            <h3>Our Beginning</h3>
+
+            <p>
+                And then came the day our relationship officially
+                started. 🥺❤️
+                From this day, it wasn't just a story anymore...
+                it became <b>our story.</b> 🫶
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 9 March -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">✨</div>
+
+        <div class="timeline-card">
+
+           <span class="timeline-date">
+    9 March 2025 💞
+</span>
+
+            <h3>A Special Date</h3>
+
+            <p>
+                Some dates don't need an explanation.
+                They just hold a special place in your heart. ❤️
+                And 9th March will always be one of those
+                dates for us. 🥺
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Today -->
+
+    <div class="timeline-item">
+
+        <div class="timeline-dot">💗</div>
+
+        <div class="timeline-card">
+
+            <span class="timeline-date">
+                Today 🫶
+            </span>
+
+            <h3>Still Us</h3>
+
+            <p>
+                And here we are...
+                still making memories, still annoying each other,
+                still laughing, still fighting over silly things,
+                and still choosing each other. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- Next sections will be added here -->
+     <!-- NEXT PAGE BUTTON -->
+
+<div class="next-universe">
+
+    <p>And this is just the beginning... 💗</p>
+
+    <a href="next-page.html">
+        There’s more, Bubu... 💌 →
+    </a>
+
+</div>
+
+</body>
+
+</html>
